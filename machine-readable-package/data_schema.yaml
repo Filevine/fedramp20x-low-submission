@@ -1,0 +1,42 @@
+# FedRAMP 20x Machine-Readable Package Schema
+# This schema defines the structure and required fields for the public machine-readable FedRAMP 20x assessment package.
+
+Package:
+  # Basic package information
+  CSPName: # Name of the Cloud Service Provider (e.g., "Flock Safety")
+  CSO: # Name of the Cloud Service Offering (e.g., "Flock Safety Platform")
+  impact: # FedRAMP impact level (Low, Moderate, High)
+  summaryOfCSO: # Brief description of the cloud service offering and its purpose
+
+  # List of assessments conducted for the CSO
+  Assessments:
+  - Assessment:
+      digitalSignature: # Hash or digital signature used to verify the integrity of the assessment data
+      assessorOrg: # Name of the 3PAO or assessment organization (e.g., "Moss Adams LLP")
+      date: # Date the assessment was completed (format: YYYY-MM-DD)
+      leadAssessor: # Name of the lead assessor conducting the review
+      recommendation: # 3PAO recommendation (e.g., "Authorize", "Do Not Authorize")
+      remarks: # Summary of key findings and justification for the recommendation
+      assessmentMethodology: # Description of how the assessment was conducted, including tools and techniques
+
+      # List of Key Security Indicators (KSIs) evaluated in the assessment
+      KSIs:
+      - KSI:
+          name: # Full descriptive name of the KSI (e.g., "Cloud Native Architecture")
+          shortName: # Short or abbreviated name for the KSI (e.g., "CNA")
+
+          # List of validation requirements under this KSI
+          Validations:
+          - validation:
+              shortName: # Unique identifier for the validation (e.g., "CNA-01")
+              description: # Description of the specific requirement or test
+              implementationStatus: # CSP stated implementation status: True, False, or Partial
+              assessmentStatus: # 3PAO-assessed status: True, False, or Partial
+
+              # Supporting evidence artifacts for this validation
+              Evidences:
+              - evidence:
+                  name: # Title or name of the evidence document or screenshot
+                  Artifacts:
+                  - artifact:
+                      reference: # File path, URL, or reference to the specific artifact location
