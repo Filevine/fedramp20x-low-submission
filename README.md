@@ -51,18 +51,18 @@ Our approach can be summarized with the following steps:
 
 ### Step 1 – Lightweight Documentation
 Document the implementation of our KSIs of the Filevine Application Suite using Paramify with the FedRAMP 20x validations set.
-![KSI Implementation Image](images/KSI_implementation_2.webp)
+![KSI Implementation Image](images/ksi-implementation.png)
 
 ### Step 2 – Key Security Indicators and Validations
 Gather and upload evidence into Paramify for each KSI validation, using automation where possible. Instructions and commands for each evidence object are included to provide context to the evidence process and results.
-![Evidence Image](images/evidence_2.webp)
+![Evidence Image](images/evidence.png)
 
 Filevine primarily utilizes Wiz today for evidence collection.  Wiz is a cloud security posture management (CSPM) tool that helps organizations identify and remediate security risks in their cloud environments.  In the near future, Filevine will be integrating Wiz with Paramify to automate evidence collection and validation.  This will allow for continuous monitoring and reporting of security controls, ensuring that the Filevine Application Suite remains compliant with FedRAMP requirements.
 
 ### Step 3 – Validate Evidence
 Meet with 3PAO and have them review and validate evidence in Paramify for the Filevine Application Suite. 3PAO can set Assurance Steps/Results, Assurance Status, and leave notes or remarks. 
-![Assurance Management Image](images/evidence_managements_2.webp)
-![Assurance Evidence Image](images/assurance_evidence_2.webp)
+![Assurance Evidence 1 Image](images/assurance-evidence-1.png)
+![Assurance Evidence 2 Image](images/assurance-evidence-2.png)
 
 Filevine is working with Coalfire as 3PAO for this FedRAMP 20x Assessment. 
 
@@ -211,7 +211,7 @@ Package:
 Paramify's delivered complete machine-readable file is available publicly in this repository at [machine-readable-package/filevine-coalfire-2025-assessment.yaml](machine-readable-package/filevine-coalfire-2025-assessment.yaml)
 
 ### Step 5 - 3PAO Review
-The 3PAO reviews the package and submits it directly to the FedRAMP PMO.  
+The 3PAO reviews the package and submits it directly to the FedRAMP PMO.  Our [3PAO validated letter](Validated-Assessment-Letter_Coalfire-FR20x-Low.pdf) is included in the package as an artifact.  This letter along with the Validation results will also be included in the Paramify Portal for review.  
 
 <!-- 3PAO reviews package and adds attestation. This is included at the Assessment level in the machine-readable package
 ```
@@ -228,12 +228,11 @@ The 3PAO reviews the package and submits it directly to the FedRAMP PMO.
 Either on-demand or per an automated schedule, a new package will be generated with the most current evidence using Paramify's export capability.
 
 ### Step 7 - Prototype for Continuous Reporting
-It is anticipated that Paramify will allow for a shareable link that shows the KSI dashboard. The view will look similar to the following images.
-![Paramify Dashboard Image](images/paramify_dashboard.webp)
+It is anticipated that Paramify will allow for a shareable link that shows the KSI dashboard. The view will look similar to the following image.
+![Paramify Dashboard Image](images/assessment-dashboard.png)
 
-![Paramify Trend Dashboard Image](images/trend_dashboard.webp)
-
-![Paramify Issues Dashboard Image](images/issues.webp)
+It will also include assessor and customer driven assessments in the future.   This shows one comment from the 3PAO assessor.  
+![Assessor Comment Image](images/assurance-solution.png)
 
 ### Step 8 - CSP Rationale and Summary
 A summary of and rationale for the approach used to generate the machine-readable file, and evidence generation methods is provided with the machine-readable package file.
